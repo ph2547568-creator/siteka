@@ -1,0 +1,135 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: white;
+  color: #030303;
+}
+
+header {
+    background: linear-gradient(to right, #424040, #4f7ac0);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav a {
+  color: #fff;
+  text-decoration-color: #00ccff;
+  margin: 0 10px;
+}
+
+
+
+
+
+      /*Rodapé*/
+
+footer {
+   background: linear-gradient(to right, #000000, #0066ff);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #00ccff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/*whats*/
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.whatsapp-fixo img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s;
+}
+
+.whatsapp-fixo img:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+@media (min-width: 769px){
+
+.fot{
+  width: 100px;
+    margin-left: 200px;
+    
+}
+video#video{
+    margin-top: 70px;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) and ( max-width: 900px){
+
+    
+
+
+  div#vi{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+.fot{
+    width: 200px;
+    margin-top: 25%;
+    margin-left: 25%;
+}
+div#foto p{
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* menu*/
+
+.menu a{
+  position: relative;
+ background-color: rgba(49, 47, 47, 0.4);
+ padding: 9px;
+  color: white;
+  text-decoration: none;  
+ 
+  
+ 
+}
+
+
+}
+
+
+
+ 
