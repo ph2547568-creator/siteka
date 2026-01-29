@@ -10,30 +10,16 @@ body {
 }
 
 
-header {
-  height: 60vh; /* altura do header */
-  display: flex;
-  justify-content: center; /* centro horizontal */
-  align-items: center;     /* centro vertical */
-  background: #000;
-  overflow: hidden;
-}
-
 video#teste {
   max-width: 25%;
   max-height: 50%;
 }
 
-header {
-  background: linear-gradient(to right, #000000, #0066ff);
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
+
 
 header h1 {
   font-family: "Audiowide", sans-serif;
-  font-weight: 400;
+  font-weight: 40%;
   font-style: normal;
 }
 
