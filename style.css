@@ -6,6 +6,22 @@ body {
   background-attachment: fixed; /* efeito legal */
   margin: 0;
   padding: 0;
+
+}
+
+
+header {
+  height: 60vh; /* altura do header */
+  display: flex;
+  justify-content: center; /* centro horizontal */
+  align-items: center;     /* centro vertical */
+  background: #000;
+  overflow: hidden;
+}
+
+video#teste {
+  max-width: 25%;
+  max-height: 50%;
 }
 
 header {
@@ -41,9 +57,10 @@ nav a {
 }
 
 select, input, button {
-  padding: 10px;
+  padding: 1%;
   border-radius: 5px;
   border: 1px solid #ccc;
+  
 }
 
 button {
@@ -51,7 +68,11 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+
 }
+
+
+
 
 button:hover {
   background-color: #0055a5;
@@ -62,6 +83,26 @@ main {
   margin: 30px auto;
   padding: 0 20px;
 }
+
+    /*botao de passar*/
+
+.btn-prev {
+  width: 7%;       /* largura */
+  height: 10%;      /* altura */
+  font-size: 30px;   /* tamanho da seta/texto */
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+
+.btn-next {
+  width: 7%;       /* largura */
+  height: 10%;      /* altura */
+  font-size: 30px;   /* tamanho da seta/texto */
+  border-radius: 10%;
+  cursor: pointer;
+}
+
 
 .grid {
   display: grid;
@@ -132,8 +173,8 @@ font-size: 9px;
 }
 
 .galeria img {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 75%;
+  max-height: 75%;
   object-fit: contain;
 }
 
@@ -152,9 +193,9 @@ font-size: 9px;
           
 .menu {
   position: absolute;
-  top: 0;              /* topo */
+  top: 0;              
   left: 0;
-  width: 100%;         /* ocupa toda largura */
+  width: 100%;         
   display: flex;
   justify-content: center; /* MEIO da tela */
   background: transparent; /* ou cor se quiser */
@@ -224,7 +265,7 @@ font-size: 9px;
 }
 
 .cabecalho {
-  height: 100vh;
+  height: 100%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -252,9 +293,12 @@ font-size: 9px;
   left: 20px;
 }
 .cabecalho p{
-  margin-top: 40px;
+  margin-top: 160px;
   font-size: 30px;
+  text-align: center;
 }
+
+
 
 
 
@@ -263,11 +307,10 @@ font-size: 9px;
       /*celular*/
 @media (max-width: 600px){
 
-  video#teste{
-    width: 50%;
-    margin-left: 0%;
-    margin-top: 50px;
-  }
+ video#teste {
+  max-width: 50%;
+  max-height: 50%;
+}
  .menu{
   margin-top: 100px;
   display: flex;
@@ -289,16 +332,42 @@ font-size: 9px;
 
         /*computador*/
 @media (min-width: 769px){
-video#teste{
-  width: 300px;
-  margin-left: 0%;
-  margin-top: 30px;
-  
-
+header {
+  height: 60%; /* altura do header */
+  display: flex;
+  justify-content: center; /* centro horizontal */
+  align-items: center;     /* centro vertical */
+  background: #000;
+  overflow: hidden;
 }
+
+video#teste {
+  max-width: 25%;
+  max-height: 50%;
+}
+
 
 div#vide{
   background-color: #34424e;
+}
+
+.btn-prev {
+  width: 5%;       
+  height: 10%;      
+  font-size: 30px;   
+  border-radius: 10%;
+  cursor: pointer;
+  margin-right: 7%;
+}
+
+
+.btn-next {
+  width: 5%;      
+  height: 10%;      
+  font-size: 30px;  
+  border-radius: 10%;
+  cursor: pointer;
+  margin-left: 7%;
 }
 
 }
