@@ -26,23 +26,7 @@ filtroBtn.addEventListener('click', () => {
 
 
 
-const imagens = [
-  "imagem/apartamento.JPG",
-  "imagem/banheiro.JPG",
-  "imagem/garagem.JPG",
-  "imagem/lavanda.JPG",
-];
 
-let index = 0;
-
-const galeria = document.getElementById("galeria");
-const galeriaImg = document.getElementById("galeriaImg");
-
-function abrirGaleria(posicao = 0) {
-  index = posicao;
-  galeria.style.display = "flex";
-  galeriaImg.src = imagens[index];
-}
 
 function fecharGaleria() {
   galeria.style.display = "none";
@@ -68,3 +52,48 @@ window.voltar = voltar;
 
 
 
+const galerias = {
+imovel1: [
+
+  "imagem/Sala fora.JPG",
+  "imagem/Mapa.JPG",
+  "imagem/Tênis .JPG",
+  "imagem/Piscina.JPG",
+  "imagem/quintal.JPG",
+   "imagem/Cartoon.png",
+  
+],
+imovel2: [
+  "imagem/apartamento.JPG",
+  "imagem/Confi_Apartamento.PNG",
+  "imagem/Sala.JPG",
+  "imagem/Quarto.JPG",
+  "imagem/Banheiro.JPG",
+  "imagem/garagem.JPG",
+  "imagem/Cartoon.png",
+]
+
+};
+
+let imagensAtuais = [];
+let galeriaIndex = 0;
+
+function abrirGaleria(nomeGaleria, posicao = 0) {
+  imagensAtuais = galerias[nomeGaleria];
+  if (!imagensAtuais) return;
+
+  galeriaIndex = posicao;
+  galeria.style.display = "flex";
+  galeriaImg.src = imagensAtuais[galeriaIndex];
+}
+
+function avancar() {
+  galeriaIndex = (galeriaIndex + 1) % imagensAtuais.length;
+  galeriaImg.src = imagensAtuais[galeriaIndex];
+}
+
+function voltar() {
+  galeriaIndex =
+    (galeriaIndex - 1 + imagensAtuais.length) % imagensAtuais.length;
+  galeriaImg.src = imagensAtuais[galeriaIndex];
+}
