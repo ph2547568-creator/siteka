@@ -6,9 +6,12 @@ body {
   background-attachment: fixed; /* efeito legal */
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 
 }
-
+html{
+  -webkit-text-size-adjust: 100%;
+}
 
 video#teste {
   max-width: 25%;
@@ -19,7 +22,7 @@ video#teste {
 
 header h1 {
   font-family: "Audiowide", sans-serif;
-  font-weight: 40%;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -106,7 +109,7 @@ main {
   text-align: center;
 }
 .card:hover{
- transform: scale(1.1);
+ transform: scale(1.03);
 }
 
 
@@ -292,6 +295,10 @@ font-size: 9px;
 
       /*celular*/
 @media (max-width: 600px){
+  body {
+  background-attachment: scroll; /* para mobile */
+}
+
 
  video#teste {
   max-width: 50%;
@@ -380,3 +387,25 @@ div#vide{
           margin-top: 20px;
         }
       }
+
+
+
+      /*iphone 12*/
+@media (min-width: 375px) and (max-width: 480px){
+body{
+  background-attachment: scroll; /* para mobile */
+  width: 100%;
+  height: 700px;
+}
+
+
+  .cabecalho p{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  video#teste{
+    width: 100%;
+    
+  }
+}
