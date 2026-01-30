@@ -12,27 +12,69 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
 }
 body > :not(footer) {
   flex-shrink: 0;
 }
 
+.menu {
+ 
+  top: 0;              
+  left: 0;
+  width: 100%;         
+  display: flex;
+  justify-content: center; /* MEIO da tela */
+  background: transparent; /* ou cor se quiser */
+  z-index: 1000;
+}
 
+
+.menu ul {
+  list-style: none;
+  
+  gap: 20px;
+  margin: 0;
+  padding: 15px 0;
+}
+.menu a {
+  text-transform: uppercase;
+  
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+ 
+}
+
+.menu a::after {
+  content: "";
+  
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
 
 
 .cabecalho h2{
   position: fixed;
   top: 40px;
-  left: 20px;
+  left: 25px;
   font-size: 15px;
 }
 .cabecalho h1{
   position: fixed;
   top: 0;
-  left: 0;
+  left: 25px;
   margin: 0;
- font-size: 55px;
+ font-size: 50px;
   font-family: "Audiowide", sans-serif;
   font-style: normal;
   
@@ -41,7 +83,7 @@ body > :not(footer) {
 
 
 header {
-    background: linear-gradient(to right, #a19e9e28, #2d3f5831);
+    
   color: #fff;
   text-align: center;
   padding: 4%;
@@ -60,7 +102,7 @@ nav a {
 
       /*Rodapé*/
 footer {
-   background: linear-gradient(to right, #665e5e9a, #edeff36f);
+   background: linear-gradient(to right, #000000a8, #0209166f);
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -226,33 +268,88 @@ div#foto{
     margin-top: 25%;
     margin-left: 25%;
 }
-div#foto p{
-    margin-left: 20px;
+div#foto {
+    margin-left: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: white;
+}
 
+div#foto p{
+  margin-right: 4%;
+  margin-left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* 🔥 faz quebrar quando a tela diminui */
+  
 }
 
 /* menu*/
 
-.menu a{
-  position: relative;
- background-color: rgba(49, 47, 47, 0.4);
- padding: 9px;
-  color: white;
-  text-decoration: none;  
- 
-  
- 
-}
+
 .consultora{
  margin-top: 5%; 
   text-align:center;
   font-size: 100%;
   position: absolute;
 }
+.cabecalho h1{
+  font-size: 50px;
+  position: absolute;
+
 
 }
 
+.cabecalho h2{
+  font-size: 15px;
+  position: absolute;
+  top: 6%;
 
-
+}
+.menu{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ .menu a{
+  background-color: rgba(39, 38, 38, 0.4);
+ }
  
+
+  .cabecalho p{
+    font-size: 25px;
+
+  }
+
+
+}
+
+/*ipad mini*/
+@media (min-width: 481px) and (max-width: 768px){
+.fot{
+    width: 300px;
+    margin-top: 20%;
+    margin-left: 25%;
+}
+div#foto p{
+  margin-top: 12%;
+  color: white;
+  margin-right: 4%;
+  margin-left: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* 🔥 faz quebrar quando a tela diminui */
+}
+
+.cabecalho h1{
+  margin-top: 0%;
+  position: absolute;
+}
+.cabecalho h2{
+  position: absolute;
+  top: 4%;
+}
+}

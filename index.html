@@ -76,10 +76,11 @@
   <p> Apartir de: <span class="dinheiro"> R$ 356.000</span>  <br>  Rua carlos Luis Barboso ehrenrg 181-<br>  Campinas sp</p>
 </div>
 
-      <div class="card">
-        <img src="https://picsum.photos/seed/p2/400/250" alt="Apartamento">
-        <h3>Apartamento moderno</h3>
-        <p>R$ 2.500/mês · Centro</p>
+      <div class="card condominio">
+        <img src="imagem/Sala fora.JPG" onclick="abrirGaleriaCondominio(0)">
+  
+        <h3>Condominio</h3>
+        <p> Apartir de: <span class="dinheiro">R$ 500.000</span> · Centro</p>
         <button>Ver Detalhes</button>
       </div>
 
@@ -91,6 +92,25 @@
       </div>
     </div>
   </main>
+<!-- galeria fullscreen Condomínio -->
+<div class="galeria-condominio" id="galeriaCondominio" style="display:none;">
+  <!-- botão fechar -->
+  <span class="fechar" onclick="fecharCondominio()">✕</span>
+
+  <!-- botão voltar -->
+  <button class="btn-prev" onclick="voltarCondominio()">❮</button>
+
+  <!-- imagem ampliada -->
+  <img id="galeriaImgCondominio" src="imagem/Sala fora.JPG" alt="Foto do Condomínio">
+
+  <!-- botão avançar -->
+  <button class="btn-next" onclick="avancarCondominio()">❯</button>
+</div>
+
+
+
+
+
 
 
 

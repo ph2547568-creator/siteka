@@ -23,6 +23,9 @@ filtroBtn.addEventListener('click', () => {
 });
 
 // ===== GALERIA =====
+
+
+
 const imagens = [
   "imagem/apartamento.JPG",
   "imagem/banheiro.JPG",
